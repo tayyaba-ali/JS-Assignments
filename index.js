@@ -144,10 +144,10 @@ GuestList.splice(2, 0, 'Maham');
 
 GuestList.push('Ayehsa');
 //• Print a new set of invitation messages, one for each person in your list.
-
 GuestList.forEach((guest) => {
 	console.log(` ${guest}, you are invited to the dinner`);
 });
+let invitedPeople = [...GuestList].length;
 
 //         Task # 17
 
@@ -224,3 +224,47 @@ console.log(favPlaces);
 //• Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 favPlaces.reverse();
 console.log(favPlaces);
+
+//         Task # 19
+
+//Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+
+// In exercise 16
+console.log(`I am inviting ${invitedPeople} people at the dinner`);
+
+//         Task # 20
+// Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+
+let cities = ['Karachi', 'Multan', 'Quetta', 'Lahore', 'Islamabad'];
+cities.forEach((city) => {
+	console.log(city);
+});
+
+//         Task # 21
+// They think of something you could store in a JavaScript Object. Write a program that creates Objects containing these items.
+
+let myObj = {
+	myName: 'Tayyaba',
+	rollNo: 123,
+	institite: 'Saylani',
+};
+console.log(myObj);
+//         Task # 22
+// Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+
+//         Task # 23
+
+// Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+
+// let car = 'subaru';
+
+let percentage = 90;
+// console.log("Is car == 'subaru'? I predict True.")
+console.log('If percentage == 90 ? I predict True');
+
+// console.log(car == 'subaru')
+console.log(percentage == 90);
+
+// • Look closely at your results, and make sure you understand why each line evaluates to True or False.
+
+// • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
