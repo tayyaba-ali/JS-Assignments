@@ -260,11 +260,212 @@ console.log(myObj);
 
 let percentage = 90;
 // console.log("Is car == 'subaru'? I predict True.")
-console.log('If percentage == 90 ? I predict True');
+console.log(percentage == 90 ? 'I predict True' : 'False');
 
 // console.log(car == 'subaru')
 console.log(percentage == 90);
 
 // • Look closely at your results, and make sure you understand why each line evaluates to True or False.
 
+// Observed
+
 // • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+
+let test1 = 10;
+let test2 = 20;
+let test3 = 30;
+let test4 = 40;
+let test5 = 50;
+let test6 = 60;
+let test7 = 70;
+let test8 = 80;
+let test9 = 90;
+let test10 = 100;
+console.log(test1 == 10 ? 'True' : 'False');
+console.log(test2 == 20 ? 'True' : 'False');
+console.log(test3 == 30 ? 'True' : 'False');
+console.log(test4 == 40 ? 'True' : 'False');
+console.log(test5 == 50 ? 'True' : 'False');
+console.log(test6 == 70 ? 'True' : 'False');
+console.log(test7 == 80 ? 'True' : 'False');
+console.log(test8 == 90 ? 'True' : 'False');
+console.log(test9 == 100 ? 'True' : 'False');
+console.log(test10 == 110 ? 'True' : 'False');
+
+//         Task # 24
+// More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// • Tests for equality and inequality with strings
+
+let test11 = '2';
+console.log(test11 == 2);
+console.log(test11 === 2);
+
+// • Tests using the lower case function
+
+let test12 = 'tayyaba';
+console.log(test12 === 'TaYyAba'.toLowerCase() ? 'True' : 'False');
+
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+
+let test13 = 12;
+console.log(test13 == 12 ? 'True' : 'False');
+console.log(test13 != 13 ? 'True' : 'False');
+console.log(test13 > 9 ? 'True' : 'False');
+console.log(test13 < 10 ? ' True' : 'False');
+console.log(test13 === 12 ? ' True' : 'False');
+console.log(test13 <= 12 ? ' True' : 'False');
+// • Tests using "and" and "or" operators
+
+let test14 = 80;
+console.log(test14 > 70 && test14 < 100 ? 'True' : 'False');
+console.log(test14 < 70 || test14 > 20 ? 'True' : 'False');
+
+// • Test whether an item is in a array
+
+let numbers = [1, 2, 3, 4];
+console.log(numbers.indexOf(3));
+
+// • Test whether an item is not in a array
+
+console.log(numbers.indexOf(7));
+
+//         Task # 25
+//Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+
+let alien_color = 'green';
+
+// • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
+
+if (alien_color === 'green') {
+	console.log('Player just earned 5 points');
+}
+
+// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
+else {
+	console.log(' ');
+}
+
+//         Task # 26
+// Alien Colors #2: Choose a cololr for an alien as you did in Exercise 25, and write an if-else chain.
+
+let alien_color2 = 'red';
+
+// • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+
+if (alien_color2 === 'green') {
+	console.log('Player just earned 5 points for shooting the alien');
+}
+
+// • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+else if (alien_color2 !== 'green') {
+	console.log('Player just earned 10 points');
+}
+
+// • Write one version of this program that runs the if block and another that runs the else block.
+
+if (alien_color2 === 'red') {
+	console.log('You got 20  points');
+} else {
+	console.log('You lost');
+}
+//         Task # 27
+
+//Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+
+//• If the alien is green, print a message that the player earned 5 points.
+
+if (alien_color === 'green') {
+	console.log('You earned 5 points');
+}
+
+//• If the alien is yellow, print a message that the player earned 10 points.
+else if (alien_color === 'yellow') {
+	console.log('You earned 10 points');
+}
+//• If the alien is red, print a message that the player earned 15 points.
+else if (alien_color === 'red') {
+	console.log('You earned 15 points');
+}
+//• Write three versions of this program, making sure each message is printed for the appropriate color alien
+
+let alien_color3 = 'red';
+if (alien_color3 === 'green') {
+	console.log('You earned 5 points');
+} else if (alien_color3 === 'yellow') {
+	console.log('You earned 10 points');
+} else {
+	console.log('You earned 15 points');
+}
+
+//         Task # 28
+//Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+
+let age = 20;
+// • If the person is less than 2 years old, print a message that the person is a baby.
+if (age < 2) {
+	console.log('Person is a baby');
+}
+
+// • If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
+else if (age === 2 && age < 4) {
+	console.log('Person is toddler');
+}
+
+// • If the person is at least 4 years old but less than 13, print a message that the person is a kid.
+else if (age === 4 && age < 13) {
+	console.log('Person is a kid');
+}
+
+// • If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
+else if (age === 13 && age < 20) {
+	console.log('Person is a teenager');
+}
+
+// • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
+else if (age === 20 && age < 65) {
+	console.log('Person is an adult');
+}
+// • If the person is age 65 or older, print a message that the person is an elder.
+else if (age >= 65) {
+	console.log('Person is an elder');
+}
+//         Task # 29
+//Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+// • Make a array of your three favorite fruits and call it favorite_fruits.
+
+let favorite_fruits = ['mangoes', 'apples', 'bananas'];
+
+// • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+
+if (favorite_fruits.includes('apples')) {
+	console.log('You really like apples!');
+}
+if (favorite_fruits.includes('mangoes')) {
+	console.log('You really like mangoes!');
+}
+if (favorite_fruits.includes('bananas')) {
+	console.log('You really like bananas!');
+}
+if (favorite_fruits.includes('oranges')) {
+	console.log('You really like oranges!');
+}
+if (favorite_fruits.includes('grapes')) {
+	console.log('You really like grapes!');
+}
+// Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+
+let userNames = ['Tayyaba', 'Umra', 'admin', 'Wajeeha', 'Sahiba'];
+
+// • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+
+for (let username of userNames) {
+	if (username === 'admin') {
+		console.log(`Hello ${username} would you like to see a status report?`);
+	}
+}
+
+// • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+
+for (let username of userNames) {
+	console.log(`Hello ${username},Thankyou for logging in again`);
+}
